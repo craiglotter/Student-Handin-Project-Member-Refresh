@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="ProductCode" Value="{2E5DE684-2887-49A1-BCD9-D04C01CD0A1C}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="CodeUnit"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1258ADD7-18F1-42BF-81DD-6173FC0FC3C6}"/>
+    <ROW Property="ProductName" Value="Student Handin Project Member Refresh"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="Inputs_DIR" Directory_Parent="TARGETDIR" DefaultDir="Inputs"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Application_Loader.exe" ComponentId="{7A0EC020-4D84-43FB-A206-D4A32882F14E}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Application_Loader.exe" FullKeyPath="TARGETDIR\Application_Loader.exe"/>
+    <ROW Component="AutoUpdate.exe" ComponentId="{4A329AAA-78E2-4553-AF0C-F905CF274B4B}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="AutoUpdate.exe" FullKeyPath="TARGETDIR\AutoUpdate.exe"/>
+    <ROW Component="Commerce_Courses_Student_List_Extractor.exe" ComponentId="{55E95BFB-8B95-418D-BFC9-E2A856D7402C}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Commerce_Courses_Student_List_Extractor.exe" FullKeyPath="TARGETDIR\Commerce Courses Student List Extractor.exe"/>
+    <ROW Component="Description.txt" ComponentId="{191740F7-70A0-4BC2-8DDD-FE12F86BD21E}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Description.txt" FullKeyPath="TARGETDIR"/>
+    <ROW Component="Novell.Directory.Ldap.dll" ComponentId="{66828489-0FA0-4317-953A-93E18838688C}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Novell.Directory.Ldap.dll" FullKeyPath="TARGETDIR\Novell.Directory.Ldap.dll"/>
+    <ROW Component="SETTRUST.exe" ComponentId="{F483AD53-F3C7-4362-9E24-8FE7F31700FA}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="SETTRUST.exe" FullKeyPath="TARGETDIR\SETTRUST.exe"/>
+    <ROW Component="Inputs.txt" ComponentId="{BD003A9C-9FAA-400F-A56D-4C56E40F16F5}" Directory_="Inputs_DIR" Attributes="0" Condition="" KeyPath="Inputs.txt" FullKeyPath="TARGETDIR\Inputs"/>
+    <ROW Component="Student_Handin_Project_Member_Refresh.exe" ComponentId="{4DE92C5D-3598-4E62-ACCF-39029013F1AA}" Directory_="TARGETDIR" Attributes="0" Condition="" KeyPath="Student_Handin_Project_Member_Refresh.exe" FullKeyPath="TARGETDIR\Student Handin Project Member Refresh.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="Application_Loader.exe Commerce_Courses_Student_List_Extractor.exe Description.txt Inputs.txt Novell.Directory.Ldap.dll SETTRUST.exe Student_Handin_Project_Member_Refresh.exe AutoUpdate.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AutoUpdate.exe" Component_="AutoUpdate.exe" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="JRBERR.MSG" Component_="Description.txt" FileName="JRBERR.MSG" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\JRBERR.MSG" SelfReg="false"/>
+    <ROW File="Novell.Directory.Ldap.dll" Component_="Novell.Directory.Ldap.dll" FileName="Novell~1.dll|Novell.Directory.Ldap.dll" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Novell.Directory.Ldap.dll" SelfReg="false"/>
+    <ROW File="Splash_Image.jpg" Component_="Inputs.txt" FileName="Splash~1.jpg|Splash_Image.jpg" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Inputs\Splash_Image.jpg" SelfReg="false"/>
+    <ROW File="Inputs.txt" Component_="Inputs.txt" FileName="Inputs.txt" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Inputs\Inputs.txt" SelfReg="false"/>
+    <ROW File="Application_Loader.exe" Component_="Application_Loader.exe" FileName="Applic~1.exe|Application_Loader.exe" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Application_Loader.exe" SelfReg="false"/>
+    <ROW File="Commerce_Courses_Student_List_Extractor.exe" Component_="Commerce_Courses_Student_List_Extractor.exe" FileName="Commer~1.exe|Commerce Courses Student List Extractor.exe" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Commerce Courses Student List Extractor.exe" SelfReg="false"/>
+    <ROW File="Description.txt" Component_="Description.txt" FileName="Descri~1.txt|Description.txt" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Description.txt" SelfReg="false"/>
+    <ROW File="SETTRUST.exe" Component_="SETTRUST.exe" FileName="SETTRUST.exe" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\SETTRUST.exe" SelfReg="false"/>
+    <ROW File="config.aup" Component_="Description.txt" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\config.aup" SelfReg="false"/>
+    <ROW File="Student_Handin_Project_Member_Refresh.exe" Component_="Student_Handin_Project_Member_Refresh.exe" FileName="Studen~1.exe|Student Handin Project Member Refresh.exe" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Student Handin Project Member Refresh.exe" SelfReg="false"/>
+    <ROW File="Student_Handin_Project_Member_Refresh.exe.config" Component_="Description.txt" FileName="Studen~1.con|Student Handin Project Member Refresh.exe.config" Version="" Language="" Attributes="" SourcePath="..\Student Handin Project Member Refresh\Required Files\Student Handin Project Member Refresh.exe.config" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="AI_ViewReadme" Type="194" Source="viewer.exe" Target="[#Description.txt]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="AI_LaunchApp" Type="194" Source="viewer.exe" Target="[#Application_Loader.exe]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Student_Handin_Project_Member_Refresh" Directory_="SHORTCUTDIR" Name="Studen~1|Student Handin Project Member Refresh" Component_="Application_Loader.exe" Target="[TARGETDIR]Application_Loader.exe" Arguments="" Description="" Hotkey="0" Icon_="controlPanelIcon.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+    <ROW Shortcut="Uninstall_Student_Handin_Project_Member_Refresh" Directory_="SHORTCUTDIR" Name="Uninst~1|Uninstall Student Handin Project Member Refresh" Component_="Application_Loader.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;viewer.exe&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="10"/>
+    <ATTRIBUTE name="PackageName" value="Release\Student Handin Project Member Refresh Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
